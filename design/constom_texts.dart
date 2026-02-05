@@ -11,7 +11,7 @@ class AppTexts {
   static const String login2 = "Enter your login details and password";
   static const String login3 = "Forgot Password?";
   static const String singUp = "Signup";
-  static const String text2 = "Enter your details for new account";
+  static const String text3= "Enter your details for new account";
   static const String otp = "OTP Authentication";
   static const String code2 = "An authentication code has been \nsent to (+91) 999 999 999";
 }

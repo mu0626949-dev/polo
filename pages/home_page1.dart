@@ -3,9 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:polocha/design/costom_colors.dart';
 import '../design/constrom_image.dart';
 
-
 class HomePage1 extends StatefulWidget {
-  const HomePage1 ({super.key});
+  const HomePage1({super.key});
 
   @override
   State<HomePage1> createState() => _HomePage1State();
@@ -23,15 +22,33 @@ class _HomePage1State extends State<HomePage1> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Expanded(
-                flex: 3,
+                flex: 2,
                 child: Center(
                   child: Image.asset(AppImages.deliver, fit: BoxFit.contain),
                 ),
               ),
               SizedBox(height: 15),
-              Text(""),
+              Text(
+                textAlign: TextAlign.center,
+                "Get the fastest\nDelivery groceries at home",
+                style: GoogleFonts.nunito(
+                  fontSize: 27,
+                  color: Color(0xff353535),
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              SizedBox(height: 7),
+              Text(
+                textAlign: TextAlign.center,
+                "Ger your groceries in as fast as one hour",
+                style: GoogleFonts.nunito(
+                  color: Colors.black,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              SizedBox(height: 30),
               Expanded(
-                flex: 2,
                 child: Column(
                   children: [
                     SizedBox(
@@ -57,7 +74,6 @@ class _HomePage1State extends State<HomePage1> {
                     ),
                     SizedBox(height: 15),
                     Expanded(
-                      flex: 2,
                       child: Column(
                         children: [
                           SizedBox(
@@ -83,7 +99,7 @@ class _HomePage1State extends State<HomePage1> {
                               ),
                             ),
                           ),
-                          SizedBox(height: 40),
+                          SizedBox(height: 20),
                         ],
                       ),
                     ),
