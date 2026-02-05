@@ -1,6 +1,6 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:polocha/pages/home_page.dart';
+import 'package:polocha/pages/home_page1.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -12,7 +12,7 @@ class App extends StatelessWidget {
         builder: DevicePreview.appBuilder,
         locale: DevicePreview.locale(context),
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: HomePage1(),
     );
   }
 }

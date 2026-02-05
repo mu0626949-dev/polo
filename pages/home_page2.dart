@@ -14,7 +14,9 @@ class _HomePage2State extends State<HomePage2> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.all(16),
+          padding: EdgeInsets.symmetric(horizontal: 20.0),
+          
+
        ),
       ),
     );

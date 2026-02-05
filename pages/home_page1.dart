@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:polocha/design/costom_colors.dart';
-import '../design/costom_images.dart';
+import '../design/constrom_image.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+
+class HomePage1 extends StatefulWidget {
+  const HomePage1 ({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<HomePage1> createState() => _HomePage1State();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePage1State extends State<HomePage1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +25,7 @@ class _HomePageState extends State<HomePage> {
               Expanded(
                 flex: 3,
                 child: Center(
-                  child: Image.asset(AppImages.image1, fit: BoxFit.contain),
+                  child: Image.asset(AppImages.deliver, fit: BoxFit.contain),
                 ),
               ),
               SizedBox(height: 15),
