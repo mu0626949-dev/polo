@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:polocha/design/costom_colors.dart';
+import 'package:polo/design/constom_texts.dart';
+import 'package:polo/design/costom_colors.dart';
+import 'package:polo/pages/home_page2.dart';
 import '../design/constrom_image.dart';
 
 class HomePage1 extends StatefulWidget {
@@ -14,7 +17,7 @@ class _HomePage1State extends State<HomePage1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.whiteColor,
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 20.0),
@@ -30,19 +33,19 @@ class _HomePage1State extends State<HomePage1> {
               SizedBox(height: 15),
               Text(
                 textAlign: TextAlign.center,
-                "Get the fastest\nDelivery groceries at home",
+                AppTexts.text4,
                 style: GoogleFonts.nunito(
                   fontSize: 27,
-                  color: Color(0xff353535),
+                  color: AppColors.blackColor,
                   fontWeight: FontWeight.w600,
                 ),
               ),
               SizedBox(height: 7),
               Text(
                 textAlign: TextAlign.center,
-                "Ger your groceries in as fast as one hour",
+                AppTexts.text3,
                 style: GoogleFonts.nunito(
-                  color: Colors.black,
+                  color: AppColors.blackColor,
                   fontSize: 18,
                   fontWeight: FontWeight.w600,
                 ),
@@ -61,11 +64,13 @@ class _HomePage1State extends State<HomePage1> {
                             borderRadius: BorderRadius.circular(15),
                           ),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Get.to(HomePage2());
+                        },
                         child: Text(
-                          "Get Started",
+                         AppTexts.text2,
                           style: GoogleFonts.nunito(
-                            color: Colors.white,
+                            color: AppColors.whiteColor,
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
                           ),
@@ -90,9 +95,9 @@ class _HomePage1State extends State<HomePage1> {
                               ),
                               onPressed: () {},
                               child: Text(
-                                "Log In",
+                                AppTexts.login1,
                                 style: GoogleFonts.nunito(
-                                  color: Colors.white,
+                                  color: AppColors.whiteColor,
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
                                 ),

@@ -1,10 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:polo/design/costom_colors.dart';
 
-class AppStyle {
-  AppStyle._();
+class AppTextStyles {
+  AppTextStyles._();
 
-  static TextStyle nunitoW600 = GoogleFonts.nunito(
+  static  TextStyle button = TextStyle(
+    color: AppColors.blueColor,
+    fontSize: 17,
     fontWeight: FontWeight.w600,
+  );
+
+  static  TextStyle title = TextStyle(
+    color: AppColors.blackColor,
+    fontSize: 22,
+    fontWeight: FontWeight.bold,
+  );
+
+  static  TextStyle body = TextStyle(
+    color: AppColors.blackColor,
+    fontSize: 14,
   );
 }
